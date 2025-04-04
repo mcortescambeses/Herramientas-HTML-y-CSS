@@ -1,0 +1,141 @@
+/* RESET Y BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #222;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* SALTAR NAVEGACIÓN */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  position: static;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+/* HEADER Y NAV */
+header {
+  background-color: #e63946;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENIDO */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* LISTA DE RECETAS */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  max-width: 300px;
+  text-align: center;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3; 
+}
+
+/* PIE DE PÁGINA */
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  li {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+}
