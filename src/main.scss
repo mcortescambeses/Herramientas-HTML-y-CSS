@@ -139,3 +139,36 @@ footer {
     gap: 0.5rem;
   }
 }
+
+/* ANIMACIÓN SVG */
+#logo-animado {
+  animation: girar 5s linear infinite;
+  margin: 2rem auto;
+  display: block;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* IMAGEN CON CLIP-PATH */
+.imagen-recortada {
+  width: 300px;
+  clip-path: polygon(
+    25% 5%, 75% 5%,
+    100% 50%, 75% 95%,
+    25% 95%, 0% 50%
+  );
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 2rem auto;
+}
+
+.imagen-recortada:hover {
+  transform: scale(1.05);
+}
