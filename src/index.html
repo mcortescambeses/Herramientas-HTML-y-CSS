@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocina Japonesa - Sabores del Sol Naciente</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./main.scss" />
-  </head>
-  
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocina Japonesa - Sabores del Sol Naciente</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./main.scss" />
+</head>
+
+<body>
 
   <section class="pec2-visual">
- 
 
- 
+
+
   </section>
 
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-    <header>
-      <h1>Cocina Japonesa</h1>
+  <header>
+    <h1>Cocina Japonesa</h1>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="categoria.html">Recetas</a></li>
-          <li><a href="enlaces.html">Créditos</a></li>
-        </ul>
-      </nav>
-      
-    </header>
-       <!-- SVG animado -->
-       <svg id="logo-animado" width="100" height="100" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="40" stroke="tomato" stroke-width="4" fill="none" />
-        <line x1="50" y1="10" x2="50" y2="90" stroke="tomato" stroke-width="2" />
-        <line x1="10" y1="50" x2="90" y2="50" stroke="tomato" stroke-width="2" />
-      </svg>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria.html">Recetas</a></li>
+        <li><a href="enlaces.html">Créditos</a></li>
+      </ul>
+    </nav>
 
-  
+  </header>
+  <!-- SVG animado -->
+  <svg id="logo-animado" width="100" height="100" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" stroke="tomato" stroke-width="4" fill="none" />
+    <line x1="50" y1="10" x2="50" y2="90" stroke="tomato" stroke-width="2" />
+    <line x1="10" y1="50" x2="90" y2="50" stroke="tomato" stroke-width="2" />
+  </svg>
 
-    <main id="main-content">
-      <section>
-        <h2>Bienvenido a la cocina japonesa</h2>
-           <!-- Imagen con clip-path -->
-        <img src="./img/sushi-recortada.jpg" alt="Plato de sushi" class="imagen-recortada" />
-        <p>
-          Sumérgete en los sabores únicos del Japón tradicional. Desde sushi hasta ramen, descubre recetas, curiosidades y secretos de una de las cocinas más refinadas del mundo.
-        </p>
-        <p>
-          Este sitio es una puerta de entrada al mundo culinario nipón. Haz clic en la sección de Recetas para empezar tu viaje gastronómico.
-        </p>
-      </section>
 
-      <!-- SECCIÓN CON INTERACTIVIDAD -->
-      <section>
-        <h2>Descubre un dato curioso</h2>
-        <button onclick="mostrarDato()">Mostrar</button>
-        <p id="dato" style="display: none; margin-top: 1rem;">
-          ¿Sabías que el sushi no siempre se hacía con pescado crudo? Originalmente se fermentaba con arroz.
-        </p>
-      </section>
-    </main>
 
-    <footer>
-      <p>&copy; 2025 - Cocina Japonesa</p>
-    </footer>
+  <main id="main-content">
+    <section>
+      <h2>Bienvenido a la cocina japonesa</h2>
+      <!-- Imagen con clip-path -->
+      <img src="./img/sushi-recortada.jpg" alt="Plato de sushi" class="imagen-recortada" loading="lazy" />
+      <p>
+        Sumérgete en los sabores únicos del Japón tradicional. Desde sushi hasta ramen, descubre recetas, curiosidades y
+        secretos de una de las cocinas más refinadas del mundo.
+      </p>
+      <p>
+        Este sitio es una puerta de entrada al mundo culinario nipón. Haz clic en la sección de Recetas para empezar tu
+        viaje gastronómico.
+      </p>
+    </section>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    <!-- SECCIÓN CON INTERACTIVIDAD -->
+    <section>
+      <h2>Descubre un dato curioso</h2>
+      <button onclick="mostrarDato()">Mostrar</button>
+      <p id="dato" style="display: none; margin-top: 1rem;">
+        ¿Sabías que el sushi no siempre se hacía con pescado crudo? Originalmente se fermentaba con arroz.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Cocina Japonesa</p>
+  </footer>
+
+  <script type="module" src="./main.js" defer></script>
+</body>
+
 </html>
